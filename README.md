@@ -39,7 +39,7 @@ You don't need to set `OLLAMA_ORIGINS`. The extension removes the browser's `Ori
 ### 2. Get the code
 
 ```sh
-git clone https://github.com/[TODO: user/repo].git
+git clone https://github.com/Lasith-Niro/GrammerPlus/.git
 cd grammerPlus
 ```
 
