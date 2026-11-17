@@ -1,0 +1,13 @@
+# Local assistant scratch files and per-user settings
+.claude/tmp/
+.claude/settings.local.json
+
+# Benchmark data (JFLEG is CC BY-NC-SA, download it yourself) and run outputs
+data/
+runs/
+
+node_modules/
+.DS_Store
+CLAUDE.md
+NOTES.md
+PLAN.md

@@ -1,0 +1,10 @@
+{
+  "name": "grammerplus",
+  "private": true,
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "test": "node --test test/",
+    "bench": "node bench/bakeoff.js"
+  }
+}

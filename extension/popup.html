@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>GrammerPlus</title>
+  <style>
+    :root { color-scheme: light dark; }
+    body { width: 300px; margin: 0; padding: 12px 16px; font: 14px/1.5 system-ui, sans-serif; }
+    h1 { font-size: 16px; margin: 0 0 8px; }
+    label { display: block; margin: 10px 0 4px; }
+    select { width: 100%; font: inherit; padding: 4px; }
+    .row { display: flex; gap: 8px; align-items: center; margin-top: 12px; }
+    .row label { margin: 0; }
+    #status { margin: 8px 0 0; font-size: 13px; overflow-wrap: anywhere; }
+    #status.bad { color: #b3261e; }
+    @media (prefers-color-scheme: dark) { #status.bad { color: #ffb4ab; } }
+    kbd { font: 12px ui-monospace, monospace; padding: 1px 4px; border: 1px solid #999; border-radius: 3px; }
+  </style>
+</head>
+<body>
+  <h1>GrammerPlus</h1>
+  <p id="status" role="status" aria-live="polite">Connecting to Ollama…</p>
+  <label for="model">Model</label>
+  <select id="model" disabled></select>
+  <div class="row">
+    <input type="checkbox" id="site-off">
+    <label for="site-off">Disable on <span id="host">this site</span></label>
+  </div>
+  <p>Select text, then press <kbd id="shortcut">Alt+Shift+G</kbd> or right-click and choose "Check grammar".</p>
+  <p id="card-keys">On the card: <kbd>Alt+1</kbd>–<kbd>Alt+5</kbd> switch style, <kbd>Ctrl+Enter</kbd> replaces, <kbd>Alt+C</kbd> copies, <kbd>Esc</kbd> closes.</p>
+  <script type="module" src="popup.js"></script>
+</body>
+</html>
